@@ -17,7 +17,7 @@ pipeline {
 			steps{
 				script{
 					echo 'Construire l`\'image Docker'
-					bat "docker build -t ${IMAGE_NAME}."
+					bat "docker build -t ${IMAGE_NAME} ."
 				}
 			}
 		}
