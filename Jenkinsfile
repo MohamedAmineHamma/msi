@@ -46,6 +46,7 @@ pipeline {
 			steps{
 				script{
 					echo 'Arret du conteneur après Test'
+					sleep 10000
 					bat "docker rm -f ${CONTAINER_NAME}"
 				}
 			}
