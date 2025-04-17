@@ -2,7 +2,7 @@ pipeline {
 	agent any
 	
 	environment {
-		IMAGE_NAME = 'MSI'
+		IMAGE_NAME = 'msi'
 		CONTAINER_NAME = 'msi-container'
 	}
 	
