@@ -35,7 +35,7 @@ pipeline {
 		stage('Test HTTP'){
 			steps{
 				script{
-					echo 'Execution de l'application dans la phase de test'
+					echo 'Execution de l\'application dans la phase de test'
 					sleep 5 
 					bat "curl http://localhost:3000"
 				}
