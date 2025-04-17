@@ -5,7 +5,7 @@ FROM node:20
 WORKDIR /usr/src/app
 
 #COPIE DU FICHIER DU PROJET 
-COPY ..
+COPY..
 
 #INSTALLATION DE DEPENDANCES 
 RUN npm install
