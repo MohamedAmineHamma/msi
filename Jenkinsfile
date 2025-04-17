@@ -16,7 +16,7 @@ pipeline {
 		stage('Construire Docker'){
 			steps{
 				script{
-					echo 'Construire l'image Docker'
+					echo 'Construire l`\'image Docker'
 					bat "docker build -t ${IMAGE_NAME}."
 				}
 			}
@@ -25,7 +25,7 @@ pipeline {
 		stage('Déploiement Local'){
 			steps{
 				script{
-					echo 'Lancer l'image Docker'
+					echo 'Lancer l\'image Docker'
 					bat "docker rm -f ${CONTAINER_NAME} || exit 0"
 					bat "docker run -d -p 3000:3000 --name ${CONTAINER_NAME} ${IMAGE_NAME}"
 				}
